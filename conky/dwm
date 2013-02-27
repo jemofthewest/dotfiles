@@ -1,0 +1,20 @@
+out_to_console yes
+out_to_x no
+background no
+use_xft yes
+xftfont terminus:normal:size=8
+update_interval 2.0
+total_run_times 0
+use_spacer none
+
+color1 gray
+color2 cyan
+color3 yellow
+color4 green
+color5 blue
+color6 white
+color7 red
+# TEXT ideas
+# desktop_name
+TEXT
+$color4${scroll 25 5 $mpd_smart} :: $color1$mpd_elapsed/$mpd_length CPU: $color6${cpu cpu0}% $color1 RAM: $color6 $memperc% $color1 BAT: $color6$battery_percent% $color1 NET: $color6${addr wlan0}  $color5 ${execi 300 /home/jeremy/bin/weather.sh 49931} $color1${time %a} $color3${time %D %R}

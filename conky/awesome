@@ -1,0 +1,48 @@
+alignment bottom_middle
+background yes
+cpu_avg_samples 2
+default_color gray
+default_outline_color 222222
+draw_borders no
+draw_graph_borders yes
+draw_outline no
+draw_shades no
+use_xft yes
+xftfont Terminus:size=8
+gap_x 5
+gap_y 3
+minimum_size 1260 6
+maximum_width 1260
+net_avg_samples 2
+out_to_console no
+out_to_stderr no
+extra_newline no
+own_window no
+own_window_class Conky
+own_window_type desktop
+own_window_colour 3f3f3f
+stippled_borders 0
+update_interval 1.0
+uppercase no
+use_spacer left
+show_graph_scale no
+show_graph_range no
+format_human_readable yes
+
+color1 gray
+color2 cyan
+color3 yellow
+color4 green
+color5 blue
+color6 red
+color7 white
+
+mpd_host 127.0.0.1
+
+TEXT
+${if_mpd_playing} [${color6}${mpd_status}${color} - ${mpd_elapsed}/${mpd_length}] ${scroll 35 5 ${mpd_smart}} ${else} \
+${color1}Activity on /dev/sda:${color} ${diskiograph 10,50 000000 ff0000 -t}${endif} \
+${alignr}${color1}wlan0 [${color4}${addr wlan0}${color}]: ${color1}Up:${color} ${upspeed wlan0} ${color1} - Down:${color} ${downspeed wlan0}     \
+${alignr}${color1}Battery: [${color3}${acpiacadapter}${color1}] ${color}${battery_percent BAT0}% ${battery_bar 5,50 BAT0} | \
+${color7}CPU:${color} ${cpu}% ${cpubar cpu0 5,50} ${color7}CPU1:${color} ${cpubar cpu1 5,50} ${color7}CPU2:${color} ${cpubar cpu2 5,50} ${color}| \
+${color7}RAM:${color} ${memperc}% ${membar 5,50}

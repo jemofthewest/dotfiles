@@ -1,0 +1,50 @@
+search lua
+search share
+search luakit
+search .xinit
+shell python2 textrpg.py
+touch ex24.c
+touch ex25.c
+mkdir devpkg
+touch README Makefile
+touch README
+touch Makefile
+touch db.h
+touch db.c
+search 
+search pacman
+touch command.h
+touch devpkg.c
+search down
+search conf.d
+search acpid
+touch lib_tests
+make
+!make
+s
+s make
+search fortune
+search HW
+shell make
+search .mutt
+search .muttrc
+shell touch .mutt/aliases
+shell mkdir scmutils
+touch HW1.m
+open_with xournal
+cp
+copy
+paste
+search mat
+search doc
+search glpk
+search zenburn
+search burn
+@diff %c %f
+search .config
+
+delete seriously? y
+shell evince rcrintro.pdf
+search scho
+open_with evince
+delete

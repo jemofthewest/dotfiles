@@ -1,0 +1,6 @@
+[description:"add dotfiles to github" entry:"1356566359" project:"productivity" status:"pending" uuid:"b07d82c8-00cf-4612-921d-77b26444e59f"]
+[description:"improve ui quality" end:"1361982441" entry:"1356566365" priority:"H" project:"cpf" status:"deleted" uuid:"d71bc787-b9a9-48ea-9f11-d6575c18b78d"]
+[description:"read two-zone model" end:"1361982445" entry:"1356566369" priority:"M" project:"cpf" status:"deleted" uuid:"7ce7a243-8fd3-4b4b-ba1b-7ce248930ce9"]
+[description:"translate filtrationEff.m to .c" end:"1361982450" entry:"1356566376" priority:"L" project:"cpf" status:"deleted" uuid:"251da9ec-2047-47fd-bbd2-12308a22d97a"]
+[description:"translate s-function to level2" end:"1361982451" entry:"1356566388" project:"cpf" status:"deleted" uuid:"d07be209-3898-47db-809c-3ed7c730ea97"]
+[description:"Optimization bounds as fcn of params" entry:"1361982331" project:"cpf" status:"pending" tags:"code,optimization" uuid:"768fa922-6137-43e5-8102-ed781c7f9029"]

@@ -1,0 +1,13 @@
+# Holidays
+m=jan & w=mon & a=3 , Martin Luther King Day
+* feb 14 , Valentine's Day
+m=may & w=sun & a=2 , Mother's Day
+m=may & w=mon & b=1 , Memorial Day
+m=jun & w=sun & a=3 , Father's Day
+* jul 4 , Independence Day
+m=sep & w=mon & a=1 , Labor Day
+m=nov & w=thu & a=4 , Thanksgiving
+
+# Birthdays
+1989* may 12 , I turn \a
+1987* jun 07 , Sarah turns \a

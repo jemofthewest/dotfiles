@@ -1,0 +1,81 @@
+time 1356566359
+new [description:"add dotfiles to github" entry:"1356566359" status:"pending" uuid:"b07d82c8-00cf-4612-921d-77b26444e59f"]
+---
+time 1356566365
+new [description:"improve ui quality" entry:"1356566365" status:"pending" uuid:"d71bc787-b9a9-48ea-9f11-d6575c18b78d"]
+---
+time 1356566369
+new [description:"read two-zone model" entry:"1356566369" status:"pending" uuid:"7ce7a243-8fd3-4b4b-ba1b-7ce248930ce9"]
+---
+time 1356566376
+new [description:"translate filtrationEff.m to .c" entry:"1356566376" status:"pending" uuid:"251da9ec-2047-47fd-bbd2-12308a22d97a"]
+---
+time 1356566388
+new [description:"translate s-function to level2" entry:"1356566388" status:"pending" uuid:"d07be209-3898-47db-809c-3ed7c730ea97"]
+---
+time 1356566547
+old [description:"improve ui quality" entry:"1356566365" status:"pending" uuid:"d71bc787-b9a9-48ea-9f11-d6575c18b78d"]
+new [description:"improve ui quality" entry:"1356566365" project:"home" status:"pending" uuid:"d71bc787-b9a9-48ea-9f11-d6575c18b78d"]
+---
+time 1356566588
+old [description:"improve ui quality" entry:"1356566365" project:"home" status:"pending" uuid:"d71bc787-b9a9-48ea-9f11-d6575c18b78d"]
+new [description:"improve ui quality" entry:"1356566365" project:"cpf" status:"pending" uuid:"d71bc787-b9a9-48ea-9f11-d6575c18b78d"]
+---
+time 1356566606
+old [description:"translate s-function to level2" entry:"1356566388" status:"pending" uuid:"d07be209-3898-47db-809c-3ed7c730ea97"]
+new [description:"translate s-function to level2" entry:"1356566388" project:"cpf" status:"pending" uuid:"d07be209-3898-47db-809c-3ed7c730ea97"]
+---
+time 1356566612
+old [description:"translate filtrationEff.m to .c" entry:"1356566376" status:"pending" uuid:"251da9ec-2047-47fd-bbd2-12308a22d97a"]
+new [description:"translate filtrationEff.m to .c" entry:"1356566376" project:"cpf" status:"pending" uuid:"251da9ec-2047-47fd-bbd2-12308a22d97a"]
+---
+time 1356566618
+old [description:"read two-zone model" entry:"1356566369" status:"pending" uuid:"7ce7a243-8fd3-4b4b-ba1b-7ce248930ce9"]
+new [description:"read two-zone model" entry:"1356566369" project:"cpf" status:"pending" uuid:"7ce7a243-8fd3-4b4b-ba1b-7ce248930ce9"]
+---
+time 1356566642
+old [description:"add dotfiles to github" entry:"1356566359" status:"pending" uuid:"b07d82c8-00cf-4612-921d-77b26444e59f"]
+new [description:"add dotfiles to github" entry:"1356566359" project:"productivity" status:"pending" uuid:"b07d82c8-00cf-4612-921d-77b26444e59f"]
+---
+time 1356566746
+old [description:"improve ui quality" entry:"1356566365" project:"cpf" status:"pending" uuid:"d71bc787-b9a9-48ea-9f11-d6575c18b78d"]
+new [description:"improve ui quality" entry:"1356566365" priority:"H" project:"cpf" status:"pending" uuid:"d71bc787-b9a9-48ea-9f11-d6575c18b78d"]
+---
+time 1356566844
+old [description:"read two-zone model" entry:"1356566369" project:"cpf" status:"pending" uuid:"7ce7a243-8fd3-4b4b-ba1b-7ce248930ce9"]
+new [description:"read two-zone model" entry:"1356566369" priority:"L" project:"cpf" status:"pending" uuid:"7ce7a243-8fd3-4b4b-ba1b-7ce248930ce9"]
+---
+time 1356566851
+old [description:"read two-zone model" entry:"1356566369" priority:"L" project:"cpf" status:"pending" uuid:"7ce7a243-8fd3-4b4b-ba1b-7ce248930ce9"]
+new [description:"read two-zone model" entry:"1356566369" priority:"M" project:"cpf" status:"pending" uuid:"7ce7a243-8fd3-4b4b-ba1b-7ce248930ce9"]
+---
+time 1356566867
+old [description:"translate filtrationEff.m to .c" entry:"1356566376" project:"cpf" status:"pending" uuid:"251da9ec-2047-47fd-bbd2-12308a22d97a"]
+new [description:"translate filtrationEff.m to .c" entry:"1356566376" priority:"L" project:"cpf" status:"pending" uuid:"251da9ec-2047-47fd-bbd2-12308a22d97a"]
+---
+time 1361981990
+new [description:"Optimization bounds as fcn of params @cpf" entry:"1361981990" status:"pending" tags:"code,optimization" uuid:"fd68e84e-8241-4c9d-8621-1455c45b7c68"]
+---
+time 1361982312
+old [description:"Optimization bounds as fcn of params @cpf" entry:"1361981990" status:"pending" tags:"code,optimization" uuid:"fd68e84e-8241-4c9d-8621-1455c45b7c68"]
+new [description:"Optimization bounds as fcn of params @cpf" end:"1361982310" entry:"1361981990" status:"deleted" tags:"code,optimization" uuid:"fd68e84e-8241-4c9d-8621-1455c45b7c68"]
+---
+time 1361982331
+new [description:"Optimization bounds as fcn of params" entry:"1361982331" project:"cpf" status:"pending" tags:"code,optimization" uuid:"768fa922-6137-43e5-8102-ed781c7f9029"]
+---
+time 1361982445
+old [description:"improve ui quality" entry:"1356566365" priority:"H" project:"cpf" status:"pending" uuid:"d71bc787-b9a9-48ea-9f11-d6575c18b78d"]
+new [description:"improve ui quality" end:"1361982441" entry:"1356566365" priority:"H" project:"cpf" status:"deleted" uuid:"d71bc787-b9a9-48ea-9f11-d6575c18b78d"]
+---
+time 1361982450
+old [description:"read two-zone model" entry:"1356566369" priority:"M" project:"cpf" status:"pending" uuid:"7ce7a243-8fd3-4b4b-ba1b-7ce248930ce9"]
+new [description:"read two-zone model" end:"1361982445" entry:"1356566369" priority:"M" project:"cpf" status:"deleted" uuid:"7ce7a243-8fd3-4b4b-ba1b-7ce248930ce9"]
+---
+time 1361982451
+old [description:"translate filtrationEff.m to .c" entry:"1356566376" priority:"L" project:"cpf" status:"pending" uuid:"251da9ec-2047-47fd-bbd2-12308a22d97a"]
+new [description:"translate filtrationEff.m to .c" end:"1361982450" entry:"1356566376" priority:"L" project:"cpf" status:"deleted" uuid:"251da9ec-2047-47fd-bbd2-12308a22d97a"]
+---
+time 1361982452
+old [description:"translate s-function to level2" entry:"1356566388" project:"cpf" status:"pending" uuid:"d07be209-3898-47db-809c-3ed7c730ea97"]
+new [description:"translate s-function to level2" end:"1361982451" entry:"1356566388" project:"cpf" status:"deleted" uuid:"d07be209-3898-47db-809c-3ed7c730ea97"]
+---

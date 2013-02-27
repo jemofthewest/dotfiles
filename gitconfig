@@ -1,0 +1,12 @@
+[user]
+	name = jemofthewest
+	email = jemofthewest@gmail.com
+[credential]
+	helper = cache --timeout=3600
+[push]
+	default = matching
+[color]
+	status = auto
+	branch = auto
+[alias]
+	co = checkout
