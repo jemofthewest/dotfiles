@@ -1,0 +1,43 @@
+folder-hook 'personal' 'source ~/.mutt-personal'
+folder-hook 'work' 'source ~/.mutt-work'
+
+## Switch to default account on startup.
+source "~/.mutt-work"
+
+## Get theme
+source "~/.mutt/themes/colors.zenburn"
+
+## Shortcuts
+macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt-personal<enter><change-folder>!<enter>'
+macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt-work<enter><change-folder>!<enter>'
+
+## Use Vim!!!
+set editor="vim"
+
+## Gmail style keybinds
+macro index,pager S "<flag-message><sync-mailbox><delete-message> "Star message"
+
+## Aliases
+set alias_file = "~/.mutt/aliases"
+set reverse_alias = yes
+source $alias_file
+
+## Settings
+set sort=threads
+set smart_wrap=yes
+set wrap=72
+set sleep_time = 0
+set pager_index_lines = 5
+set abort_nosubject = no
+set abort_unmodified = ask-yes
+set beep = no
+set edit_headers = yes
+set fast_reply = yes
+set menu_scroll = yes
+
+## Mailing lists?
+subscribe vim-user
+subscribe arch-general arch-announce
+
+## Keybinds
+bind index "^" imap-fetch-mail
