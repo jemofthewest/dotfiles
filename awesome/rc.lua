@@ -95,7 +95,7 @@ end
 tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    tags[s] = awful.tag({ "base", "www", "term", "mail", "rss", "media", "irc", "dev", }, s, layouts[2])
+    tags[s] = awful.tag({ "base", "www", "term", "mail", "rss", "media", "irc", "dev", "task", }, s, layouts[2])
 end
 -- }}}
 
@@ -104,21 +104,27 @@ end
 freedesktop.utils.terminal = terminal
 freedesktop.utils.icon_theme = "Faenza"
 
-menu_items = freedesktop.menu.new()
+-- menu_items = freedesktop.menu.new()
 myawesomemenu = {
    { "manual", terminal .. " -e man awesome" },
    { "edit config", editor_cmd .. " " .. awesome.conffile },
    { "restart", awesome.restart },
    { "quit", awesome.quit }
 }
-table.insert(menu_items, { "awesome", myawesomemenu, beautiful.awesome_icon })
-table.insert(menu_items, { "open terminal", terminal, freedesktop.utils.lookup_icon({icon = 'terminal'}) })
+
+require('menu')
+mymainmenu = awful.menu({ items = { {"xdgmenu", xdgmenu },
+                                    {"awesome", myawesomemenu, beautiful.awesome_icon }
+                                  }
+                                })
+--table.insert(menu_items, { "awesome", myawesomemenu, beautiful.awesome_icon })
+--table.insert(menu_items, { "open terminal", terminal, freedesktop.utils.lookup_icon({icon = 'terminal'}) })
 
 -- mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
 --                                    { "open terminal", terminal }
 --                                  }
 --                        })
-mymainmenu = awful.menu.new({ items = menu_items, width = 150 })
+-- mymainmenu = awful.menu.new({ items = menu_items, width = 150 })
 
 mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
                                      menu = mymainmenu })
@@ -419,6 +425,8 @@ awful.rules.rules = {
       properties = { tag = tags[1][7] } },
     { rule = { instance= "dev" },
       properties = { tag = tags[1][8] } },
+    { rule = { instance= "task" },
+      properties = { tag = tags[1][9] } },
 }
 -- }}}
 
