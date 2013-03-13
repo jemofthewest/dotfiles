@@ -1,21 +1,31 @@
-folder-hook 'personal' 'source ~/.mutt-personal'
-folder-hook 'work' 'source ~/.mutt-work'
+## Offlineimap
+source "~/.mutt/mailboxes"
 
-## Switch to default account on startup.
-source "~/.mutt-work"
+## msmtp
+set sendmail="/usr/bin/msmtp"
+set use_from=yes
+set from=jemofthewest@gmail.com
+set realname="Jeremy West"
+set envelope_from=yes
+
+## Switch accounts
+folder-hook 'personal' 'set from=jemofthewest@gmail.com'
+folder-hook 'personal' 'set postponed=$HOME/mail/personal/drafts'
+folder-hook 'work' 'set from=jcwest@mtu.edu'
+folder-hook 'work' 'set postponed=$HOME/mail/work/drafts'
 
 ## Get theme
 source "~/.mutt/themes/colors.zenburn"
 
-## Shortcuts
-macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt-personal<enter><change-folder>!<enter>'
-macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt-work<enter><change-folder>!<enter>'
-
 ## Use Vim!!!
 set editor="vim"
 
+## Macros
 ## Gmail style keybinds
-macro index,pager S "<flag-message><sync-mailbox><delete-message> "Star message"
+macro index,pager S "<flag-message><sync-mailbox><delete-message>" "Star message"
+
+## Offlineimap
+macro index ^ "<shell-escape>offlineimap<enter>" "Sync mailboxes"
 
 ## Aliases
 set alias_file = "~/.mutt/aliases"
@@ -23,6 +33,10 @@ set reverse_alias = yes
 source $alias_file
 
 ## Settings
+set folder=$HOME/mail
+set my_name = "Jeremy West"
+set header_cache=~/.hcache
+set message_cachedir=~/.mcache
 set sort=threads
 set smart_wrap=yes
 set wrap=72
@@ -38,6 +52,4 @@ set menu_scroll = yes
 ## Mailing lists?
 subscribe vim-user
 subscribe arch-general arch-announce
-
-## Keybinds
-bind index "^" imap-fetch-mail
+subscribe octave-maintainers
