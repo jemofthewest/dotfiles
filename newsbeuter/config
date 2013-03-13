@@ -4,3 +4,13 @@ max-items 25
 save-path "~/Saved Articles"
 show-read-articles no
 browser links
+
+# bind-key <key> <operation> [<dialog>]
+#  where dialog: 'all' 'feedlist' 'filebrowser' 'help' 'articlelist' 'article' 'tagselection' 'filterselection' 'urlview' 'podbeuter'
+#unbind-key <key> [<dialog>]
+
+unbind-key j
+unbind-key k
+
+bind-key k up
+bind-key j down
