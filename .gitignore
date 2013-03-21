@@ -1,4 +1,5 @@
 mutt/cache
+mutt/aliases
 
 oh-my-zsh/locals.zsh
 oh-my-zsh/log/.zsh_history
