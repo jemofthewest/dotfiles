@@ -21,10 +21,17 @@ alias mlnd='matlab -nodesktop -nosplash -glnx86'
 
 # Systemd
 alias sctl='sudo systemctl'
-alias jctl='sudo journalctl'
+alias jctl='sudo journalctl -b'
 alias sctls='systemctl suspend'
+alias sctlr='systemctl reboot'
 alias sctlp='systemctl poweroff'
 alias sctlh='systemctl hibernate'
+
+# Tor and luakit
+alias luakit='torsocks luakit'
+
+# Stupid xlinks default
+alias xlinks='xlinks -g'
 
 # pacman
 # alias pacsize='pacman -Qi | awk '/^Name/ {pkg=$3} /Size/ {print $4$5,pkg}' | sort -n'
