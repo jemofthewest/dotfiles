@@ -25,6 +25,7 @@ colorscheme zenburn
 " colorscheme wombat
 " colorscheme twilight
 set background=dark
+nmap \e :NERDTreeToggle<CR>
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
