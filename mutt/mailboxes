@@ -1,1 +1,1 @@
-mailboxes "+personal/drafts" "+personal/flagged" "+personal/inbox" "+work/drafts" "+work/flagged" "+work/inbox"
+mailboxes "+personal/archives" "+personal/drafts" "+personal/flagged" "+personal/inbox" "+personal/sent" "+personal/trash" "+work/archives" "+work/drafts" "+work/flagged" "+work/inbox" "+work/sent" "+work/trash"
