@@ -293,6 +293,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
     awful.key({ modkey,           }, "i", function () awful.util.spawn("luakit") end),
     awful.key({ modkey, "Shift"   }, "m", function() awful.util.spawn("urxvt -name mail -e mutt") end),
+    awful.key({ modkey,           }, "F12", function () awful.util.spawn("xlock") end),
     awful.key({ modkey, "Control" }, "r", awesome.restart),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit),
 
@@ -412,6 +413,8 @@ awful.rules.rules = {
     { rule = { class = "Surf" },
       properties = { tag = tags[1][2] } },
     { rule = { class = "luakit" },
+      properties = { tag = tags[1][2] } },
+    { rule = { class = "Firefox" },
       properties = { tag = tags[1][2] } },
     { rule = { instance = "urxvt" },
       properties = { tag = tags[1][3] } },
