@@ -13,3 +13,12 @@ oh-my-zsh/cache/
 
 ranger/bookmarks
 ranger/history
+
+newsbeuter/cache.db
+newsbeuter/cache.db.lock
+
+task/completed.data
+task/undo.data
+task/pending.data
+
+vim/.netrwhist
