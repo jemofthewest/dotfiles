@@ -20,10 +20,7 @@ set number
 set ignorecase
 set smartcase
 set formatoptions=c,q,r,t
-" colorscheme lucius
 colorscheme zenburn
-" colorscheme wombat
-" colorscheme twilight
 set background=dark
 nmap \e :NERDTreeToggle<CR>
 
@@ -118,3 +115,9 @@ set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/afte
 
 "" Smarter wrapping
 set lbr
+
+"" latex-suite settings
+let g:Tex_DefaultTargetFormat='pdf'
+
+"" pathogen
+execute pathogen#infect()
