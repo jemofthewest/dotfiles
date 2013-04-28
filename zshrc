@@ -33,6 +33,9 @@ alias luakit='torsocks luakit'
 # Stupid xlinks default
 alias xlinks='xlinks -g'
 
+# qemu
+alias qemu='qemu-system-x86_64'
+
 # pacman
 # alias pacsize='pacman -Qi | awk '/^Name/ {pkg=$3} /Size/ {print $4$5,pkg}' | sort -n'
 
